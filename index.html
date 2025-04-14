@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Wetter Sendenhorst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+    }
+
+    .weatherwidget-io {
+      display: block;
+      width: 100vw;
       height: 100vh;
     }
   </style>
 </head>
 <body>
-  <a class="weatherwidget-io" href="https://forecast7.com/de/51d847d83/sendenhorst/"
-     data-label_1="SENDENHORST" data-label_2="Wetter"
-     data-font="Helvetica" data-icons="Climacons Animated"
-     data-theme="weather_one">SENDENHORST Wetter</a>
+  <a class="weatherwidget-io"
+     href="https://forecast7.com/de/51d847d83/sendenhorst/"
+     data-label_1="SENDENHORST"
+     data-label_2="Wetter"
+     data-font="Helvetica"
+     data-icons="Climacons Animated"
+     data-theme="weather_one">
+     SENDENHORST Wetter
+  </a>
+
   <script>
     !function(d,s,id){
       var js,fjs=d.getElementsByTagName(s)[0];
