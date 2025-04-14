@@ -8,38 +8,22 @@
     html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
+      background: #000;
       height: 100%;
-      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .weatherwidget-io {
-      display: block;
-      width: 100vw;
-      height: 100vh;
+    img {
+      width: 95vw;
+      height: auto;
+      max-height: 100vh;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <a class="weatherwidget-io"
-     href="https://forecast7.com/de/51d847d83/sendenhorst/"
-     data-label_1="SENDENHORST"
-     data-label_2="Wetter"
-     data-font="Helvetica"
-     data-icons="Climacons Animated"
-     data-theme="weather_one">
-     SENDENHORST Wetter
-  </a>
-
-  <script>
-    !function(d,s,id){
-      var js,fjs=d.getElementsByTagName(s)[0];
-      if(!d.getElementById(id)){
-        js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-      }
-    }(document,'script','weatherwidget-io-js');
-  </script>
+  <img src="https://img.wetter.com/wettervorhersage/7-tage/deutschland/sendenhorst/DE0009811/7-tage-vorhersage/sendenhorst.png" alt="Wetter Sendenhorst">
 </body>
 </html>
